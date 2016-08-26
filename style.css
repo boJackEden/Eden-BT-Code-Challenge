@@ -1,0 +1,104 @@
+html, body {
+   height: 100%;
+   background: black;
+   font-family: sans-serif;
+   padding: 10px;
+}
+.header{
+  padding: 0% 1%;
+}
+.header p {
+  color: white;
+  display: inline-block;
+}
+.header p:last-child{
+  float: right;
+}
+.tiles{
+  overflow: hidden;
+}
+.wrapper{
+  margin: 0.5%;
+  position: relative;
+  float: left;
+  width: 24%;
+  height: 400px;
+  display: none;
+}
+.tile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+.thumb {
+  width: 85px;
+  height: 85px;
+  background-size: cover;
+  margin: 107px auto 0px;
+}
+.thumb:hover {
+  cursor:pointer;
+}
+.title {
+  margin: 15px;
+  font-size: 23px;
+  font-weight: 200;
+}
+.title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.author{
+  text-transform: uppercase;
+  display: inline;
+  font-size: 14px;
+}
+.plays{
+  display: inline;
+  font-size: 14px;
+}
+.tag-container{
+  padding: 15px 10px;
+}
+.tag {
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 4px 7px;
+  display: inline-block;
+  margin: 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.tag:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 0.5%;
+    width: 49%;
+    height: 400px;
+  }
+}
+@media ( max-width: 590px) {
+  .wrapper {
+    margin: 0.5%;
+    width: 99%;
+    height: 300px;
+  }
+  .thumb {
+    margin: 45px auto 0px;
+  }
+}
